@@ -1,0 +1,27 @@
+.App
+{
+    text-align: center;
+}
+.navbar
+{
+    display: flex;
+    list-style: none;
+    color: DodgerBlue;
+    justify-content:flex-end !important;
+
+
+  
+}
+.active
+{
+ color: red;
+}
+.list_style:hover {
+    background-color: #f0f0f0;
+  }
+.list_style
+{
+    /* margin:0 8px !important; */
+    margin:0 0.5rem !important;
+    padding-right: 10px !important;
+}
