@@ -23,7 +23,7 @@ setInputs(values => ({
 =>React ensures that values refers to the most current version of inputs, even if other state updates are in progress.
 
 
-EG: code: To get idea: 
+Eg: code: To get idea: 
 import React, { useState } from 'react';
 
 function Test() {  // Capitalize the component name

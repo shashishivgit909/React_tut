@@ -97,6 +97,6 @@ The optional cleanup function allows you to perform any necessary cleanup when t
 
 /*
 VVI: In useEffect hook whatever function we pass are effects which are remembers by fubctional component to run after every DOM manipulation (render). 
- So that we can make count mariablealso in useEffect that how much time our component is randers. 
+ So that we can make count variable also in useEffect that how much time our component is randers. 
  but we can make effects to run on some chnages of states only using  dependency array ([]).  
 */

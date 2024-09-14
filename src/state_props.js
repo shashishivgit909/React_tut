@@ -98,7 +98,7 @@ function App() {
       {/*   //PROPS: 
       // note for passing any value either an object or String or number etc , we need to pass that value in {}  for a particular key
        // props will be object consting all those key value passed  as above in <student />
-       // we can use pass string value for key in props without {} but for others we need to use {} so better to use above concept*/}
+       // we can pass string value for key in props without {} but for others we need to use {} so better to use above concept*/}
 
       <button onClick={() => { setName("Shashi") }}>update name</button>
       {/* <button onClick={()=>{Update}}>update name</button>  , // this is another way to define js code to run on cllck*/}
@@ -215,8 +215,19 @@ function App() {
     {
       // setCount(count+1); //this is simple form of setCount
       setCount(prevCount=>prevCount+1);  //functional form of setCount or fuction which set state. Here we  can use anyname instaed of prevstate 
-      //.VVI:  By this line we are taking initial state value as argument ans doing oprreatio on that and  assigning final value to state count using setCount.
-    }
+      //.VVI:  By this line we are taking initial state value as argument and doing opreation on that and  assigning final value to state count using setCount.
+
+      //for multiple lines calculus in functional form of setCount
+      setCount(prevCount => {
+      // Perform multiple lines of calculations
+      let newCount = prevCount;
+      for (let i = 0; i < 5; i++) {
+        newCount += 2; // Increment by 2 in each iteration
+      }
+      // Return the final value
+      return newCount;
+    });
+    } 
   }
   return (
     <div className="App">
