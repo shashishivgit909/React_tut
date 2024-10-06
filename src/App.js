@@ -232,24 +232,37 @@ export default function App() {
 */
 
 
-import UseStateWithObject from "./UseStateWithObject"
-// import UseStateWithArrays from "./UseStateWithArrays"
-import FetchingUsingUseEffect from "./Hooks/FetchingUsingUseEffect"
-import ParentComponent from "./Hooks/usecallback_hook/ParentComponent"
-import UseMemoHook from "./Hooks/UsememoHook";
-import GParent from "./Parent_childRandering.js/GParent";
-export default function App() {
+// import UseStateWithObject from "./UseStateWithObject"
+// // import UseStateWithArrays from "./UseStateWithArrays"
+// import FetchingUsingUseEffect from "./Hooks/FetchingUsingUseEffect"
+// import ParentComponent from "./Hooks/usecallback_hook/ParentComponent"
+// import UseMemoHook from "./Hooks/UsememoHook";
+// import GParent from "./Parent_childRandering.js/GParent";
+// import Temp from "./Hooks/Temp";
+// export default function App() {
 
 
+//   return (
+//     <div>
+//       <Temp />
+//     </div>
+//   )
+// }
+
+
+
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SearchParamsComponent from './Hooks/UseSearchParams_hook';  // Assuming your component is named SearchParamsComponent
+
+function App() {
   return (
-    <div>
-      {/* <UseStateWithObject/> */}
-      {/* <UseStateWithArrays/> */}
-      {/* <FetchingUsingUseEffect/> */}
-      {/* < ParentComponent/> */}
-      {/* <UseMemoHook/> */}
-      
-      <GParent />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SearchParamsComponent />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
+
+export default App;

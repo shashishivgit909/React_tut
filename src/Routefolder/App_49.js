@@ -13,7 +13,7 @@
 //         <BrowserRouter>
 //         {/* note route path for home should match with route given in link for home or about */}
 //         {/* we can use below links in a sepearte functional component and use it here any no of time : Eg: have made a compo as navbar by importing link and using it here below */}
-//         {/* NOTE: VVVI: we cannot do react router realted   outside BrowserRouter  */}
+//         {/* NOTE: VVVI: we cannot do react router realted   outside BrowserRouter  so if we can geenrate links in any componeent , but need to iport inside browser router as done in "Navbar"*/}
 //         <Navbar />
 //             <Routes>
 //                 {/* here all routing should be wrappped inside Routes and all routes are wraped inside browswerRoutes */}
@@ -84,6 +84,7 @@ function App() {
 
 export default App;
 
+/*
 //file: 
 import { Link ,Outlet} from "react-router-dom";
 function Contact()
@@ -99,3 +100,12 @@ function Contact()
     )
 }
 export default Contact;
+
+// NOte:1. Link vs Navlink
+/*
+=>Its is not recommneded to use className for styling, it may give warning in console and sometime app may bheva e unusual  to link so we use Navlink.
+
+ 2. <a> vs link 
+ => <a> , y use of this complete page refreshes which is not recomnended in react. so use link
+
+*/

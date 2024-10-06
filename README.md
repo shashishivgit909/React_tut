@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+## Topics to Learn
+ 1. Core react(): UI or state manipulation ,JSX
+ 2. Componenet reusualbility
+ 3. reuse component using Props 
+ 4. how to propage chnage using hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ ## Additional Addon to react
 
-## Available Scripts
+ 1. Router : (react donot have router)
+ 2. state management(Redux , Redux tookit etc)
+ 3. BAAS API (eg: firebase)
 
-In the project directory, you can run:
 
-### `npm start`
+ ## NOte:Core react creates web APP which run s on single page (SPA), but when we need to create multiple pages we use router from react-router-dom  which gives us facility to make multiple page application using routers ,But actually working on single page .just routing in si gle html page by some actions 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ## React----> 
+1. uses router-dom    : for  multipage web app
+2. uses React-Native for mobile App.
 
-### `npm test`
+## npm vs npx vs yarn 
+=> npx simplifies command. npm is the default package manager for Node. js, npx allows running packages without installation, and Yarn provides enhanced performance and additional features compared to npm. The choice between them depends on project requirements, performance needs, and personal preference.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# utility : 
+1. create-react-app : it is a software which make a bundle of all files structure we need to  work with react.  THis is quite bulky .  it      gives  also those packages or files which  will not be used in our peoject and  makes bundle heavy. So now recomended to use vite or parcel.
+2. vite or parcel   :also does same work as crrate-react-app but less heavy bundles for react.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# NOte: 
+1. function or compoennt name should start withUppercase.
+2. In the react app created by "vite" the  compoenet you are making are forced to have  file name with .jsx 
+3. In the react app created by "create-react-app" , we use .js extension of file But   we can  also make .jsx extension of file if that file is returning jsx .
