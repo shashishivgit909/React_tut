@@ -76,7 +76,7 @@ export default App;
 //for this conecpt 3 files to see . App.js , Student.js, index.js( if needed for deatil)
 
 
-import React, { useState } from 'react'
+import React, { Component, useState } from 'react'
 
 
 import Student from './Student'
@@ -238,3 +238,7 @@ function App() {
 }
 export default App;
 */
+
+
+
+

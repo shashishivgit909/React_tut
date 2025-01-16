@@ -110,5 +110,9 @@ setInputs(values => ({
 2. After age changes, the state becomes { username: 'John', age: 25 }, because the previous state is preserved and only the relevant field is updated.
 This approach ensures that state updates are handled safely and efficiently in React.
 
+
+VVI:( can seefrom :"https://react.dev/learn/queueing-a-series-of-state-updates")
+NOte: State updation done when all codes in an eventhandler runs , suppose , we are updating same state , multiple times then  state updation will not happen each time , state value will be still same as initial , when that handler runs completely then state is updated and rander ocurs.
 */
+
 
