@@ -91,7 +91,8 @@ The spread operator ...values copies all the current values from the inputs stat
 [name]: value dynamically updates the field that corresponds to the name attribute of the input being changed (e.g., "username" or "age").
 
 Example of Why Using the Function Form is Important:
-Imagine you have two input fields (username and age), and both trigger the handleChange function nearly at the same time. Without using the function form, React might not use the current state and could result in an incomplete update.
+Imagine you have two input fields (username and age), and both trigger the handleChange function nearly at the same time. Without using the function 
+form, React might not use the current state and could result in an incomplete update.
 
 For example, if you use:
 code: 
