@@ -1,4 +1,40 @@
 // //topic1: normal use of useEFFect
+
+/*
+=>  useEffect is a React Hook used to perform side effects in function components.
+ It runs after the render and is commonly used for tasks like data fetching, event listeners, subscriptions, and timers.
+ */
+//1. Data Fetching:
+//2. Timers(setInterval):
+code:
+
+useEffect(() => {
+  const interval = setInterval(() => { ... }, 1000);
+return () => clearInterval(interval); // Cleanup
+}, []); // Runs only once on mount
+
+//3. Event Listeners:
+code:
+useEffect(() => {
+  const handleScroll = () => {
+    console.log('Window scrolled');
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  // Cleanup: remove the event listener when the component unmounts
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []); // Runs once when the component mounts
+
+
+
+
+
+
+
+
 import React, { useEffect, useState } from "react"; // there are 2 hooks 
 function App() {
   const [count, setCount] = useState(0); // initial value of count
