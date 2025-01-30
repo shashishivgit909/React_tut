@@ -194,7 +194,7 @@ React requires a single root element. You can wrap multiple elements inside:
 
 jsx
 Copy
-Edit
+
 return (
   <div>
     <h1>Hello</h1>
@@ -205,7 +205,7 @@ OR use a Fragment (<>...</>) to avoid unnecessary <div> elements:
 
 jsx
 Copy
-Edit
+
 return (
   <>
     <h1>Hello</h1>
@@ -217,7 +217,7 @@ You can return standard JSX elements like:
 
 jsx
 Copy
-Edit
++
 return <h1>Hello World</h1>;
 or multiple elements inside a parent wrapper.
 
