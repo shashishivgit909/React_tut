@@ -176,7 +176,9 @@ const ChildComponent = ({ parentMethod, parentState }) => {
 };
 
 export default ChildComponent;
-Remember, directly passing a parent component to a child component isn't a standard practice in React. Instead, passing down props or functions allows communication between parent and child components, ensuring a more predictable flow of data and actions within your application.
+Remember, directly passing a parent component to a child component isn't a standard practice in React.
+ Instead, passing down props or functions allows communication between parent and child components, 
+ ensuring a more predictable flow of data and actions within your application.
 */
 
 import User from './User'
@@ -239,6 +241,7 @@ function App() {
 export default App;
 */
 
-
-
+//NOte:
+//Props is immutable in nature , so we cannot change the value of props in child component.
+// Instead we can store that props value in state in child component and then we can change the value of state in child component.
 
