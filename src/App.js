@@ -254,14 +254,15 @@ export default function App() {
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SearchParamsComponent from './Hooks/UseSearchParams_hook';  // Assuming your component is named SearchParamsComponent
-
+import Dropdown from "./Dropdown/Dropdown";
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<SearchParamsComponent />} />
-      </Routes>
-    </BrowserRouter>
+      <Dropdown/>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<SearchParamsComponent />} />
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 

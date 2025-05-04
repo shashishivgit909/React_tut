@@ -152,7 +152,7 @@ Protected + Nested routing together ensure security while maintaining layout.
 
 It ensures that nested routes appear inside their parent component when matched.
 
-Deep Nested Routing Flow
+#Deep Nested Routing Flow
 
 Parent Component: Contains an <Outlet /> where child routes render.
 
@@ -305,3 +305,26 @@ By ensuring each parent component has <Outlet />, React Router correctly renders
 ✔ Even if deep components have <Outlet />, they won’t render unless all ancestors allow it.
 
 This approach ensures a properly structured nested routing system in React Router. 🚀
+
+
+
+🧭 React Router : Absolute vs Realtive path 
+🔹 Absolute Path:
+
+=> An absolute path starts with a /.It is resolved from the root of the app.Useful when you want to always go to a specific route, regardless of the current location.
+
+
+<Link to="/about">About</Link>
+
+<Route path="/about" element={<About />} />
+📍 From any page, clicking this link will navigate to:
+http://yourdomain.com/about
+
+🔸 Relative Path
+=> A relative path does NOT start with a /. It is resolved based on the current route. Useful in nested routing or when working inside route subcomponents.
+
+
+// If current path is "/home"
+<Link to="about">About</Link>
+📍 Clicking this will navigate to:
+http://yourdomain.com/home/about
