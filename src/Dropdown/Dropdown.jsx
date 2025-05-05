@@ -3,10 +3,12 @@
 //=> Searchable ,Easily styled ,Supports multiselect, async, etc.
 
 
-import React from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 
+
 const ReactSelectDropdown = () => {
+  const[input,setInput]=useState("");
   const options = [
     { value: "apple", label: "Apple 🍎" },
   { value: "banana", label: "Banana 🍌" },
@@ -24,6 +26,7 @@ const ReactSelectDropdown = () => {
   ];
 
   const handleChange = (selectedOption) => {
+    setInput((prev)=>selectedOption)
     console.log("Selected:", selectedOption);
   };
 
